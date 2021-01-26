@@ -5,9 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Bank.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-        <link rel="shortcut icon" href="bank.png" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="shortcut icon" href="bank.png" type="image/x-icon">
     <title>MMTBank Ltd.</title>
 </head>
 
@@ -53,8 +52,7 @@
                     <div class="col-md-6">
                         <div class="dep">
                             <h3>Deposite</h3>
-                            <input type="text" class="form-control" placeholder="$ Amoubt you want to Deposit"
-                                id="depositAmount"><br>
+                            <input type="text" class="form-control" placeholder="$ Amoubt you want to Deposit" id="depositAmount"><br>
                             <button type="button" class="btn btn-success" id="addDeposit">Enter</button>
                         </div>
                     </div>
@@ -77,28 +75,26 @@
 
     <script>
         var button = document.getElementById('button');
-        button.addEventListener('click', function () {
+        button.addEventListener('click', function() {
             var submit = document.getElementById("submit-area");
             submit.style.display = 'none';
             var Transaction = document.getElementById("transaction");
             Transaction.style.display = "block";
         })
         const addDeposit = document.getElementById("addDeposit");
-        addDeposit.addEventListener('click', function ()
-         {
+        addDeposit.addEventListener('click', function() {
 
             const depositAmount_ = document.getElementById("depositAmount").value;
             const depositNumber = parseFloat(depositAmount_);
-            
-            
-            updateInfo("currentAmount",depositNumber );
-            updateInfo("curentBalance",depositNumber);
-             document.getElementById("depositAmount").value = "";
+
+
+            updateInfo("currentAmount", depositNumber);
+            updateInfo("curentBalance", depositNumber);
+            document.getElementById("depositAmount").value = "";
 
         })
 
-        function updateInfo(id,CurentNumber) 
-        {
+        function updateInfo(id, CurentNumber) {
             var curentBalance = document.getElementById(id).innerText;
             var curentBalanceAmount = parseFloat(curentBalance);
             var totalNewBalance = CurentNumber + curentBalanceAmount;
@@ -106,19 +102,17 @@
         }
         // Withdraw
         const withdraw = document.getElementById("addwithdraw");
-        withdraw.addEventListener('click',function()
-        {
+        withdraw.addEventListener('click', function() {
             var WithdrawAmonut = document.getElementById('addwithdrawAmount').value;
             var CurentWithdrawAmonut = parseFloat(WithdrawAmonut);
 
             document.getElementById('addwithdrawAmount').value = "";
 
-           updateInfo('withdrawMoany',CurentWithdrawAmonut );
-           updateInfo("curentBalance",-1*CurentWithdrawAmonut);
-           
+            updateInfo('withdrawMoany', CurentWithdrawAmonut);
+            updateInfo("curentBalance", -1 * CurentWithdrawAmonut);
+
 
         })
-
     </script>
 
 </body>
