@@ -67,44 +67,50 @@ body {
 
 @media only screen and (max-width: 768px) {
     .login-area {
-        width: 400px;
-        margin-left: -12%;
+        width: 280px;
+        height: 230px;
+        margin-left: -28%;
+        position: absolute;
     }
     #header {
-        font-size: 25px;
+        font-size: 15px;
         margin-left: -1%;
+        color: green;
     }
     .Deposit {
-        width: 280px;
+        width: 250px;
+        height: 150px;
         display: flex;
         position: relative;
         margin-bottom: 5%;
-        margin-left: -27%;
+        margin-left: -30%;
         box-shadow: 2px 2px 5px gray;
     }
     .Withdraw {
-        width: 280px;
+        width: 250px;
+        height: 150px;
         display: flex;
         position: relative;
         margin-bottom: 5%;
-        margin-left: -27%;
+        margin-left: -30%;
         box-shadow: 2px 2px 5px gray;
     }
     .Blance {
-        width: 280px;
+        width: 250px;
+        height: 150px;
         display: flex;
         position: relative;
         margin-bottom: 5%;
-        margin-left: -27%;
+        margin-left: -30%;
         box-shadow: 2px 2px 5px gray;
     }
     .dep {
-        width: 300px;
+        width: 250px;
         height: 180px;
         margin-left: -30%;
     }
     .wid {
-        width: 300px;
+        width: 250px;
         height: 180px;
         margin-top: 4%;
         margin-left: -30%;
