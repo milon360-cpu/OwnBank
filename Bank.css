@@ -1,0 +1,84 @@
+body
+{
+    padding: 100px;
+}
+#header
+{
+   margin-left: 37%;
+}
+.login-area
+{
+    height: 230px;
+    width: 700px;
+    margin-left: 30%;
+    box-shadow: 5px 5px 10px gray;
+    padding: 40px;
+    border-radius: 10px;
+}
+#transaction
+{
+    display: none;
+    margin-left: 8%;
+}
+
+.deposit-area
+{ 
+    box-sizing: border-box;
+    border-radius: 20px;
+    padding: 30px;
+    width: 380px;
+    height: 200px;
+  
+}
+.dep
+{
+  margin-left: 20%;
+  box-shadow: 5px 5px 10px gray;
+  padding: 30px;
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+}
+.wid
+{
+  margin-left: -10%;
+  box-shadow: 5px 5px 10px gray;
+  padding: 30px;
+  width: 500px;
+  height: 250px;
+  border-radius: 10px;
+ 
+}
+.Deposit
+{
+   background-color: chocolate;
+   color: white;
+   margin-left: 5%;
+   position: absolute;
+}
+.Withdraw
+{
+  background-color: rgb(15, 177, 161);
+  color: white;
+}
+.Blance
+{
+  background-color: teal;
+  color: white;
+  margin-left: -5%;
+  position: absolute;
+}
+@media only screen and (max-width: 768px)
+{
+     .login-area
+     {
+         width: 400px;
+         margin-left: -12%;
+     }
+     #header
+     {
+         font-size: 25px;
+         margin-left: -1%;
+     }
+    
+}
